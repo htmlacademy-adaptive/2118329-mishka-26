@@ -126,10 +126,27 @@
         </li>
       </ul>
       <span class="main-footer__credentials">Разработано
-        <a class="html-academy-link" href="#">
+        <a class="html-academy-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </span>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal_container__content modal-cart">
+        <h2 class="modal-cart__title">Добавить в корзину</h2>
+        <form class="modal-cart__form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="modal-cart__text">Выберите размер:</p>
+          <label class="modal-cart__label" for="s-size">S</label>
+          <input class="modal-cart__option modal-cart__option--s" id="s-size" type="radio" name="size" value="s">
+          <label class="modal-cart__label" for="m-size">M</label>
+          <input class="modal-cart__option modal-cart__option--m" id="m-size" type="radio" name="size" value="m">
+          <label class="modal-cart__label" for="l-size">L</label>
+          <input class="modal-cart__option modal-cart__option--l" id="l-size" type="radio" name="size" value="l">
+        </form>
+        <button class="modal-cart__button button button--form" type="submit">Добавить</button>
+      </div>
+    </div>
+
   </body>
 </html>
