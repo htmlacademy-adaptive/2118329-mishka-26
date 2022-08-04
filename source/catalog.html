@@ -9,7 +9,7 @@
 
   <body class="page__body">
 
-    <header clas="main-header">
+    <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
       </a>
@@ -54,7 +54,7 @@
             <button class="cards-list__button add-button"><span class="visually-hidden">Добавить в корзину</span></button>
           </li>
           <li class="cards-list__card">
-            <a class="cards-list__link item-card" href="#"></a>
+            <a class="cards-list__link item-card" href="#">
               <img class="item-card__image" src="img/item-card-blankets.jpg" width="260" height="195" alt="Вязаная корзина">
               <h3 class="item-card__title card-title">Корзинка для белья</h3>
               <p class="item-card__description card-description">Диаметр 15 см, высота 10 см</p>
@@ -63,7 +63,7 @@
             <button class="cards-list__button add-button"><span class="visually-hidden">Добавить в корзину</span></button>
           </li>
           <li class="cards-list__card">
-            <a class="cards-list__link item-card" href="#"></a>
+            <a class="cards-list__link item-card" href="#">
               <img class="item-card__image" src="img/item-card-toy-basket.jpg" width="260" height="195" alt="Корзина с игрушками">
               <h3 class="item-card__title card-title">Большая корзинкадля игрушек</h3>
               <p class="item-card__description card-description">Диаметр 30 см, высота 30 см</p>
@@ -82,15 +82,15 @@
     </main>
 
     <footer class="main-footer">
-      <ul class="main-footer__socials socials">
-        <li class="socials__item">
-          <a class="socials__link vk-link" href="#"><span class="visually-hidden"></span>Мы ВКонтакте</a>
+      <ul class="main-footer__socials">
+        <li class="main-footer__item">
+          <a class="main-footer__link main-footer__link--vk-link" href="#"><span class="visually-hidden"></span>Мы ВКонтакте</a>
         </li>
-        <li class="socials__item">
-          <a class="socials__link youtube-link" href="#"><span class="visually-hidden">Мы на YouTube</span></a>
+        <li class="main-footer__item">
+          <a class="main-footer__link main-footer__link--youtube-link" href="#"><span class="visually-hidden">Мы на YouTube</span></a>
         </li>
-        <li class="socials__item">
-          <a class="socials__link telegram-link" href="#"><span class="visually-hidden">Мы в Telegram</span></a>
+        <li class="main-footer__item">
+          <a class="main-footer__link main-footer__link--telegram-link" href="#"><span class="visually-hidden">Мы в Telegram</span></a>
         </li>
       </ul>
       <span class="main-footer__credentials">Разработано
@@ -101,7 +101,7 @@
     </footer>
 
     <div class="modal-container">
-      <div class="modal_container__content modal-cart">
+      <div class="modal-container__content modal-cart">
         <h2 class="modal-cart__title">Добавить в корзину</h2>
         <form class="modal-cart__form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="modal-cart__text">Выберите размер:</p>
@@ -112,7 +112,7 @@
           <label class="modal-cart__label" for="l-size">L</label>
           <input class="modal-cart__option modal-cart__option--l" id="l-size" type="radio" name="size" value="l">
         </form>
-        <button class="modal-cart__button button button--form" type="submit">Добавить</button>
+        <button class="modal-cart__button button button--colored" type="submit">Добавить</button>
       </div>
     </div>
 
