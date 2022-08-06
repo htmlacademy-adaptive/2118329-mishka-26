@@ -1,0 +1,19 @@
+.description-text {
+  margin: 0;
+
+  font-size: 15px;
+
+  &--value {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &--emphasised {
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 17px;
+  }
+}

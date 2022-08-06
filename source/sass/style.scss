@@ -1,0 +1,56 @@
+@use "components/fonts.scss";
+
+@use "components/mixins.scss";
+
+@use "components/main-header.scss";
+
+@use "components/navigation-button.scss";
+
+@use "components/main-page-title.scss";
+
+@use "components/promo-container.scss";
+
+@use "components/category-label.scss";
+
+@use "components/featured-item.scss";
+
+@use "components/secondary-title.scss";
+
+@use "components/description-text.scss";
+
+@use "components/button.scss";
+
+@use "components/advantage-text.scss";
+
+@use "components/about-us.scss";
+
+@use "components/feedback.scss";
+
+@use "components/review.scss";
+
+@use "components/contact-us.scss";
+
+@use "components/main-footer.scss";
+
+@use "components/modal-cart.scss";
+
+@use "components/local-header.scss";
+
+@use "components/form-label-text.scss";
+
+@use "components/order-form.scss";
+
+@use "components/item-card.scss";
+
+@use "components/catalog-production.scss";
+
+.visually-hidden {
+  @include mixins.visually-hidden;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
