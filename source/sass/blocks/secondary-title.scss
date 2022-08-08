@@ -1,0 +1,14 @@
+.secondary-title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+
+  color: #63d1bb;
+
+  &--large {
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
