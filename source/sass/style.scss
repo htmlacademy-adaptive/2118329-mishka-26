@@ -1,56 +1,23 @@
-@use "components/fonts.scss";
-
-@use "components/mixins.scss";
-
-@use "components/main-header.scss";
-
-@use "components/navigation-button.scss";
-
-@use "components/main-page-title.scss";
-
-@use "components/promo-container.scss";
-
-@use "components/category-label.scss";
-
-@use "components/featured-item.scss";
-
-@use "components/secondary-title.scss";
-
-@use "components/description-text.scss";
-
-@use "components/button.scss";
-
-@use "components/advantage-text.scss";
-
-@use "components/about-us.scss";
-
-@use "components/feedback.scss";
-
-@use "components/review.scss";
-
-@use "components/contact-us.scss";
-
-@use "components/main-footer.scss";
-
-@use "components/modal-cart.scss";
-
-@use "components/local-header.scss";
-
-@use "components/form-label-text.scss";
-
-@use "components/order-form.scss";
-
-@use "components/item-card.scss";
-
-@use "components/catalog-production.scss";
-
-.visually-hidden {
-  @include mixins.visually-hidden;
-}
-
-body {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  color: #444444;
-}
+@import "fonts.scss";
+@import "global.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/main-header.scss";
+@import "blocks/navigation-button.scss";
+@import "blocks/main-page-title.scss";
+@import "blocks/promo-container.scss";
+@import "blocks/category-label.scss";
+@import "blocks/featured-item.scss";
+@import "blocks/secondary-title.scss";
+@import "blocks/button.scss";
+@import "blocks/advantage-text.scss";
+@import "blocks/about-us.scss";
+@import "blocks/feedback.scss";
+@import "blocks/review.scss";
+@import "blocks/contact-us.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/modal-cart.scss";
+@import "blocks/hero.scss";
+@import "blocks/form-label-text.scss";
+@import "blocks/order-form.scss";
+@import "blocks/item-card.scss";
+@import "blocks/catalog-production.scss";
