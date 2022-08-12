@@ -1,3 +1,41 @@
 .feedback {
-  padding-bottom: 45px;
+  padding: 0 30px 45px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+
+    background-image: url("../../img/index-review-background.png");
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}
+
+.feedback__title {
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+}
+
+.feedback__list {
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 4;
+    grid-column: 1 / -1;
+  }
+}
+
+.feedback__buttons {
+  @media (min-width: $tablet-width) {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
+}
+
+.feedback__share {
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
 }

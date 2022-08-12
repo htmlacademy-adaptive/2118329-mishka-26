@@ -1,13 +1,22 @@
 .category-label {
   display: block;
 
+  box-sizing: border-box;
   padding: 24px 160px 31px 30px;
+  width: 100%;
 
-  background-color: #63d1bb;
   color: #ffffff;
 
   text-decoration: none;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
+}
+
+.category-label--interior {
+  background-color: #63d1bb;
+}
+
+.category-label--toys {
+  background-color: #56c3b2;
 }

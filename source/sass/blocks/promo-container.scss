@@ -1,5 +1,9 @@
 .promo-container {
+  display: grid;
+  grid-template-rows: 73px auto 120px auto;
+
   min-height: 373px;
+  margin-bottom: 30px;
 
   background-image: url("../../img/index-header-background.jpg");
   background-position: center;
@@ -7,5 +11,9 @@
 }
 
 .promo-container__title {
-  vertical-align: middle;
+  grid-row: 2 / 3;
+}
+
+.promo-container__list {
+  grid-row: 4 / 5;
 }

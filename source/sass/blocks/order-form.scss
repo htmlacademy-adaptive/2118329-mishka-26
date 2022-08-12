@@ -1,10 +1,31 @@
+.order-form {
+  padding: 0 30px;
+}
+
 .order-form__section {
   margin-bottom: 42px;
+}
+
+.order-form__section:nth-child(2n) {
+  @media (min-width: $tablet-width) {
+    background-color: #f1f1f1;
+  }
+}
+
+.order-form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .order-form__comment {
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .order-form__submit {

@@ -1,13 +1,18 @@
 @import "fonts.scss";
 @import "global.scss";
+@import "mixins.scss";
+@import "variables.scss";
 @import "blocks/visually-hidden.scss";
+@import "blocks/page.scss";
 @import "blocks/main-header.scss";
+@import "blocks/site-navigation.scss";
 @import "blocks/navigation-button.scss";
 @import "blocks/main-page-title.scss";
 @import "blocks/promo-container.scss";
+@import "blocks/categories-navigation.scss";
 @import "blocks/category-label.scss";
-@import "blocks/featured-item.scss";
 @import "blocks/secondary-title.scss";
+@import "blocks/featured-item.scss";
 @import "blocks/button.scss";
 @import "blocks/advantage-text.scss";
 @import "blocks/about-us.scss";
@@ -19,5 +24,7 @@
 @import "blocks/hero.scss";
 @import "blocks/form-label-text.scss";
 @import "blocks/order-form.scss";
+@import "blocks/order-fieldset.scss";
+@import "blocks/cards-list.scss";
 @import "blocks/item-card.scss";
 @import "blocks/catalog-production.scss";

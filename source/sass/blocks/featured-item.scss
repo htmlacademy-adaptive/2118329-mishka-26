@@ -1,13 +1,75 @@
 .featured-item {
-  padding-bottom: 36px;
+  padding: 0 30px 36px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto 1fr 1fr;
+  }
+}
+
+.featured-item__wrapper {
+  margin-bottom: 35px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+
+    flex-direction: row;
+  }
+}
+
+.featured-item__title {
+  order: 1;
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
 }
 
 .featured-item__description {
   margin: 0;
+  margin-bottom: 28px;
 
   font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
 }
 
+.featured-item__properties {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 0 auto;
+  margin-bottom: 28px;
+  max-width: 291px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
+}
+
+.featured-item__attribute,
 .featured-item__value {
   margin: 0;
 
@@ -15,9 +77,53 @@
   line-height: 20px;
 }
 
+.featured-item__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25.5px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 6;
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / -1;
+    grid-column: 3 / 4;
+  }
+}
+
 .featured-item__price {
   margin: 0;
+  margin-bottom: 24.5px;
+  text-align: center;
 
   font-weight: 700;
   font-size: 17px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
+}
+
+.featured-item__order {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 16px 80px;
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
 }
