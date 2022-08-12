@@ -1,5 +1,15 @@
 .catalog-production {
   margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 .catalog-production__title {
@@ -9,8 +19,32 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
+}
+
+.catalog-production__image {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
 }
 
 .catalog-production__description {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
+}
+
+.catalog-production__button {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
 }

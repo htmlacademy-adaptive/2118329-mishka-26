@@ -5,17 +5,20 @@
     <meta charset="utf-8">
     <title>Мишка: Каталог товаров</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body class="page__body">
 
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
-      </a>
-      <button class="main-header__toggle menu-closed" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="main-header__container">
+        <a class="main-header__logo" href="index.html">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
+        </a>
+        <button class="main-header__toggle menu-closed" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <nav class="main-header__navigation site-navigation">
         <ul class="site-navigation__pages-list">
           <li class="site-navigation__page">
@@ -33,7 +36,16 @@
             <a class="site-navigation__link navigation-button navigation-button--cart" href="#">Корзина:<span class="cart-value"> пока пуста</span></a>
           </li>
         </ul>
+        <ul class="site-navigation__featured-sections">
+          <li class="site-navigation__featured-element">
+            <a class="site-navigation__featured-link navigation-button" href="#">Новые поступления</a>
+          </li>
+          <li class="site-navigation__featured-element">
+            <a class="site-navigation__featured-link navigation-button" href="#">Распродажа</a>
+          </li>
+        </ul>
       </nav>
+      <p class="main-header__comment">Бесплатная доставка по России</p>
     </header>
 
     <main>
@@ -67,7 +79,7 @@
           <li class="cards-list__card">
             <a class="cards-list__link item-card" href="#">
               <img class="item-card__image" src="img/item-card-toy-basket.jpg" width="260" height="195" alt="Корзина с игрушками">
-              <h3 class="item-card__title">Большая корзинкадля игрушек</h3>
+              <h3 class="item-card__title">Большая корзинка для игрушек</h3>
               <p class="item-card__description">Диаметр 30 см, высота 30 см</p>
               <p class="item-card__price">1 500 руб.</p>
             </a>
@@ -77,6 +89,7 @@
       </section>
       <section class="catalog-production">
         <h2 class="catalog-production__title">Процесс производства</h2>
+        <img class="catalog-production__image" src="img/catalog-video-cover.jpg" width="260" height="150" alt="Производство корзинки">
         <p class="catalog-production__description">По просьбам наших любимых фолловеров
           мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="catalog-production__button button" href="form.html">Сделать заказ</a>
@@ -84,6 +97,7 @@
     </main>
 
     <footer class="main-footer">
+      <img class="main-footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина 'Мишка'">
       <ul class="main-footer__socials">
         <li class="main-footer__item">
           <a class="main-footer__link main-footer__link--vk-link" href="#"><span class="visually-hidden">Мы ВКонтакте</span></a>

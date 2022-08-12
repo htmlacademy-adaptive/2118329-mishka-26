@@ -1,3 +1,16 @@
 .about-us {
-  padding-bottom: 58px;
+  padding: 30px 30px 58px;
+}
+
+.about-us__advantages {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 66px;
+  }
 }

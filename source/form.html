@@ -5,17 +5,20 @@
     <meta charset="utf-8">
     <title>Мишка: Вязание на заказ</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body class="page__body">
 
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
-      </a>
-      <button class="main-header__toggle menu-closed" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="main-header__container">
+        <a class="main-header__logo" href="index.html">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
+        </a>
+        <button class="main-header__toggle menu-closed" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <nav class="main-header__navigation site-navigation">
         <ul class="site-navigation__pages-list">
           <li class="site-navigation__page">
@@ -33,7 +36,16 @@
             <a class="site-navigation__link navigation-button navigation-button--cart" href="#">Корзина:<span class="cart-value"> пока пуста</span></a>
           </li>
         </ul>
+        <ul class="site-navigation__featured-sections">
+          <li class="site-navigation__featured-element">
+            <a class="site-navigation__featured-link navigation-button" href="#">Новые поступления</a>
+          </li>
+          <li class="site-navigation__featured-element">
+            <a class="site-navigation__featured-link navigation-button" href="#">Распродажа</a>
+          </li>
+        </ul>
       </nav>
+      <p class="main-header__comment">Бесплатная доставка по России</p>
     </header>
 
     <main>
@@ -103,27 +115,32 @@
             </li>
           </ul>
         </fieldset>
-        <p class="order-form__section order-fieldset">
-          <span class="order-fieldset__name secondary-title">Тел</span>
-          <label class="visually-hidden" for="phone-input">Телефон</label>
-          <input class="order-fieldset__field order-fieldset__field--phone" id="phone-input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-        </p>
-        <p class="order-form__section order-fieldset">
-          <span class="order-fieldset__name secondary-title">E-mail</span>
-          <label class="visually-hidden" for="email-input">Адрес электронной почты</label>
-          <input class="order-fieldset__field order-fieldset__field--email" id="email-input" type="email" name="email" placeholder="Ваш Email*" required>
-        </p>
+        <div class="order-form__section">
+          <p class="order-fieldset">
+            <span class="order-fieldset__name secondary-title">Тел</span>
+            <label class="visually-hidden" for="phone-input">Телефон</label>
+            <input class="order-fieldset__field order-fieldset__field--phone" id="phone-input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          </p>
+          <p class="order-fieldset">
+            <span class="order-fieldset__name secondary-title">E-mail</span>
+            <label class="visually-hidden" for="email-input">Адрес электронной почты</label>
+            <input class="order-fieldset__field order-fieldset__field--email" id="email-input" type="email" name="email" placeholder="Ваш Email*" required>
+          </p>
+        </div>
         <p class="order-form__section order-fieldset">
           <span class="order-fieldset__name secondary-title">Доп</span>
           <label class="visually-hidden" for="comments-field">Дополнительные указания</label>
           <textarea class="order-fieldset__field order-fieldset__field--comment" id="comments-field" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </p>
-        <p class="order-form__comment">*Поля обязательны для заполнения</p>
-        <button class="order-form__submit button" type="submit">Отправить заказ</button>
+        <div class="order-form__wrapper">
+          <p class="order-form__comment">*Поля обязательны для заполнения</p>
+          <button class="order-form__submit button" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </main>
 
     <footer class="main-footer">
+      <img class="main-footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина 'Мишка'">
       <ul class="main-footer__socials">
         <li class="main-footer__item">
           <a class="main-footer__link main-footer__link--vk-link" href="#"><span class="visually-hidden">Мы ВКонтакте</span></a>

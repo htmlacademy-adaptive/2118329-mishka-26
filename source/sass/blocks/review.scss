@@ -2,6 +2,12 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 .review__block {
@@ -13,12 +19,22 @@
 
   font-size: 15px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
 }
 
 .review__author {
   font-weight: 700;
   font-size: 17px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
 }
 
 .review__author-socials {

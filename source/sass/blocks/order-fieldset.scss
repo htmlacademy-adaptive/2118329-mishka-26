@@ -1,0 +1,21 @@
+.order-fieldset {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 220px auto;
+  }
+}
+
+.order-fieldset__name {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.order-fieldset__list {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

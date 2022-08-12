@@ -5,17 +5,20 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body class="page__body">
 
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
-      </a>
-      <button class="main-header__toggle menu-closed" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="main-header__container">
+        <a class="main-header__logo">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
+        </a>
+        <button class="main-header__toggle menu-closed" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <nav class="main-header__navigation site-navigation">
         <ul class="site-navigation__pages-list">
           <li class="site-navigation__page">
@@ -33,36 +36,47 @@
             <a class="site-navigation__link navigation-button navigation-button--cart" href="#">Корзина:<span class="cart-value"> пока пуста</span></a>
           </li>
         </ul>
+        <ul class="site-navigation__featured-sections">
+          <li class="site-navigation__featured-element">
+            <a class="site-navigation__featured-link navigation-button" href="#">Новые поступления</a>
+          </li>
+          <li class="site-navigation__featured-element">
+            <a class="site-navigation__featured-link navigation-button" href="#">Распродажа</a>
+          </li>
+        </ul>
       </nav>
+      <p class="main-header__comment">Бесплатная доставка по России</p>
     </header>
 
     <main class="main-container">
       <h1 class="visually-hidden">Интернет-магазин "Мишка".</h1>
       <section class="promo-container">
-        <h2 class="promo-container__title main-page-title main-page-title--heading">Милые штуки ручной работы для дома</h2>
-        <ul class="categories-navigation">
-          <li class="categories-navigation__item">
-            <a class="categories-navigation__link category-label category-label--interior" href="#">Предметы интерьера</a>
-          </li>
-          <li class="categories-navigation__item">
-            <a class="categories-navigation__link category-label category-label--toys" href="#">Детские игрушки</a>
-          </li>
-        </ul>
+          <h2 class="promo-container__title main-page-title main-page-title--heading">Милые штуки ручной работы для дома</h2>
+          <ul class="promo-container__list categories-navigation">
+            <li class="categories-navigation__item">
+              <a class="categories-navigation__link category-label category-label--interior" href="#">Предметы интерьера</a>
+            </li>
+            <li class="categories-navigation__item">
+              <a class="categories-navigation__link category-label category-label--toys" href="#">Детские игрушки</a>
+            </li>
+          </ul>
       </section>
       <section class="featured-item">
-        <h2 class="featured-item__title secondary-title secondary-title--large">Товар недели</h2>
-        <p class="featured-item__name main-page-title">Вязаные корзинки</p>
+        <div class="featured-item__wrapper">
+          <h2 class="featured-item__title secondary-title secondary-title--large">Товар недели</h2>
+          <p class="featured-item__name main-page-title">Вязаные корзинки</p>
+        </div>
         <p class="featured-item__description">Экологически чистая пряжа,
           ручная работа. Доступны в шести расцветках и трёх размерах.</p>
         <dl class="featured-item__properties">
-          <dt class="featured-item__value">Цвет:</dt>
+          <dt class="featured-item__attribute">Цвет:</dt>
           <dd class="featured-item__value">тиффани/серый</dd>
-          <dt class="featured-item__value">Диаметр:</dt>
+          <dt class="featured-item__attribute">Диаметр:</dt>
           <dd class="featured-item__value">25 см</dd>
-          <dt class="featured-item__value">Высота:</dt>
+          <dt class="featured-item__attribute">Высота:</dt>
           <dd class="featured-item__value">15 см</dd>
         </dl>
-        <img src="img/featured-basket.jpg" width="260" height="315" alt="Вязаные корзинки">
+        <img class="featured-item__image" src="img/featured-basket.jpg" width="260" height="315" alt="Вязаные корзинки">
         <p class="featured-item__price">Цена: 990 руб.</p>
         <a class="featured-item__order button" href="form.html">Заказать</a>
       </section>
@@ -92,11 +106,11 @@
             </span>
           </li>
         </ul>
-        <div class="feedback-buttons">
-          <button class="feedback-buttons__switch switch-button switch-button--prev" type="button">
+        <div class="feedback__buttons">
+          <button class="feedback__switch switch-button switch-button--prev" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
           </button>
-          <button class="feedback-buttons__switch switch-button switch-button--next" type="button">
+          <button class="feedback__switch switch-button switch-button--next" type="button">
             <span class="visually-hidden">Следующий отзыв</span>
           </button>
         </div>
@@ -117,6 +131,7 @@
     </main>
 
     <footer class="main-footer">
+      <img class="main-footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина 'Мишка'">
       <ul class="main-footer__socials">
         <li class="main-footer__item">
           <a class="main-footer__link main-footer__link--vk-link" href="#"><span class="visually-hidden">Мы ВКонтакте</span></a>
