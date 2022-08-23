@@ -25,20 +25,6 @@
     max-width: 315px;
     margin: 0;
   }
-
-  // @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  //   display: grid;
-  //   grid-template-columns: auto 1fr;
-  //   grid-template-rows: auto auto auto;
-  // }
-}
-
-.cards-list__link {
-
-  // @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  //   grid-row: 1 / -1;
-  //   grid-column: 1 / -1;
-  // }
 }
 
 .cards-list__button {
@@ -49,14 +35,7 @@
   width: 20px;
   height: 20px;
 
-  // background-color: transparent;
+  background-color: transparent;
   border: none;
   cursor: pointer;
-
-
-  // @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  //   grid-row: 3 / 4;
-  //   grid-column: 2 / 3;
-  //   justify-self: end;
-  // }
 }
