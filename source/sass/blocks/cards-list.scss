@@ -6,24 +6,57 @@
 }
 
 .cards-list__card {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto auto;
+  position: relative;
+  margin-bottom: 30px;
+
+  border: 1px solid #ececec;
+
+  @media (max-width: ($tablet-width - 1px)) {
+    max-width: 260px;
+    margin: 0 auto 30px;
   }
+
+  @media (min-width: $tablet-width) {
+    max-width: 670px;
+    margin: 0 auto 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 315px;
+    margin: 0;
+  }
+
+  // @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  //   display: grid;
+  //   grid-template-columns: auto 1fr;
+  //   grid-template-rows: auto auto auto;
+  // }
 }
 
 .cards-list__link {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    grid-row: 1 / -1;
-    grid-column: 1 / -1;
-  }
+
+  // @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  //   grid-row: 1 / -1;
+  //   grid-column: 1 / -1;
+  // }
 }
 
 .cards-list__button {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-    justify-self: end;
-  }
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+
+  width: 20px;
+  height: 20px;
+
+  // background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+
+  // @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  //   grid-row: 3 / 4;
+  //   grid-column: 2 / 3;
+  //   justify-self: end;
+  // }
 }

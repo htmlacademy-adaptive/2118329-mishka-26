@@ -1,21 +1,54 @@
 .order-fieldset {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 220px auto;
+    grid-template-rows: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto 42px;
   }
 }
 
 .order-fieldset__name {
+  padding-bottom: 30px;
+  position: relative;
+
+  @media (max-width: ($tablet-width - 1px)) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 70px;
+
+      width: 800px;
+      height: 1px;
+      background-color: #62d1ba;
+      overflow: hidden;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
+
+    padding: 0;
   }
 }
 
 .order-fieldset__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
 
-    display: flex;
-    flex-wrap: wrap;
+    &--long {
+      column-count: 2;
+    }
   }
 }
