@@ -1,5 +1,10 @@
 .about-us {
-  padding: 30px 30px 58px;
+  padding: 0 50px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .about-us__advantages {
@@ -8,9 +13,11 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 66px;
+    column-count: 2;
   }
+}
+
+.about-us__advantage {
+  margin-bottom: 30px;
+  padding-top: 52px;
 }

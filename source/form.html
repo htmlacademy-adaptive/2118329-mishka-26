@@ -10,16 +10,14 @@
 
   <body class="page__body">
 
-    <header class="main-header">
-      <div class="main-header__container">
-        <a class="main-header__logo" href="index.html">
-          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
-        </a>
-        <button class="main-header__toggle menu-closed" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-      <nav class="main-header__navigation site-navigation">
+    <header class="main-header main-header--no-js">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
+      </a>
+      <button class="main-header__toggle main-header__toggle--closed" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-header__navigation main-header__navigation--closed site-navigation">
         <ul class="site-navigation__pages-list">
           <li class="site-navigation__page">
             <a class="site-navigation__link navigation-button" href="catalog.html">Каталог товаров</a>
@@ -30,7 +28,9 @@
         </ul>
         <ul class="site-navigation__user-functions">
           <li class="site-navigation__user-button">
-            <a class="site-navigation__link navigation-button navigation-button--search" href="#">Поиск по сайту</a>
+            <a class="site-navigation__link navigation-button navigation-button--search" href="#">
+              <span class="site-navigation__text">Поиск по сайту</span>
+            </a>
           </li>
           <li class="site-navigation__user-button">
             <a class="site-navigation__link navigation-button navigation-button--cart" href="#">Корзина:<span class="cart-value"> пока пуста</span></a>
@@ -48,7 +48,7 @@
       <p class="main-header__comment">Бесплатная доставка по России</p>
     </header>
 
-    <main>
+    <main class="main-container">
       <header class="hero">
         <div class="hero__container">
           <h1 class="hero__title main-page-title main-page-title--heading">Вязание на заказ</h1>
@@ -58,20 +58,20 @@
       <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="order-form__section order-fieldset">
           <legend class="order-fieldset__name secondary-title">Тип</legend>
-            <ul class="order-fieldset__list">
-              <li class="order-fieldset__item">
-                <input class="order-fieldset__field order-fieldset__field--radio" id="radio-interior" type="radio" name="category" value="interior" checked>
-                <label class="order-fieldset__label form-label-text" for="radio-interior">Аксессуар для интерьера</label>
-              </li>
-              <li class="order-fieldset__item">
-                <input class="order-fieldset__field order-fieldset__field--radio" id="radio-toys" type="radio" name="category" value="toys">
-                <label class="order-fieldset__label form-label-text" for="radio-toys">Детская игрушка</label>
-              </li>
+          <ul class="order-fieldset__list">
+            <li class="order-fieldset__item">
+              <input class="order-fieldset__field order-fieldset__field--radio" id="radio-interior" type="radio" name="category" value="interior" checked>
+              <label class="order-fieldset__label form-label-text" for="radio-interior">Аксессуар для интерьера</label>
+            </li>
+            <li class="order-fieldset__item">
+              <input class="order-fieldset__field order-fieldset__field--radio" id="radio-toys" type="radio" name="category" value="toys">
+              <label class="order-fieldset__label form-label-text" for="radio-toys">Детская игрушка</label>
+            </li>
           </ul>
         </fieldset>
         <fieldset class="order-form__section order-fieldset">
           <legend class="order-fieldset__name secondary-title">Цвет</legend>
-          <ul class="order-fieldset__list">
+          <ul class="order-fieldset__list order-fieldset__list--long">
             <li class="order-fieldset__item">
               <input class="order-fieldset__field order-fieldset__field--checkbox" id="color-white" type="checkbox" name="color" value="white" checked>
               <label class="order-fieldset__label form-label-text" for="color-white">Белый</label>
@@ -116,12 +116,12 @@
           </ul>
         </fieldset>
         <div class="order-form__section">
-          <p class="order-fieldset">
+          <p class="order-form__subsection order-fieldset">
             <span class="order-fieldset__name secondary-title">Тел</span>
             <label class="visually-hidden" for="phone-input">Телефон</label>
             <input class="order-fieldset__field order-fieldset__field--phone" id="phone-input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </p>
-          <p class="order-fieldset">
+          <p class="order-form__subsection order-fieldset">
             <span class="order-fieldset__name secondary-title">E-mail</span>
             <label class="visually-hidden" for="email-input">Адрес электронной почты</label>
             <input class="order-fieldset__field order-fieldset__field--email" id="email-input" type="email" name="email" placeholder="Ваш Email*" required>
@@ -158,5 +158,7 @@
         </a>
       </span>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

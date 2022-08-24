@@ -1,0 +1,27 @@
+.switch-button {
+  padding: 24px 53px;
+
+  background-color: transparent;
+  border: 1px solid #ececec;
+  cursor: pointer;
+
+  background-image: url("../../img/switch-button-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

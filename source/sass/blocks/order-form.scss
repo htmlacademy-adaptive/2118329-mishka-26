@@ -1,9 +1,17 @@
 .order-form {
-  padding: 0 30px;
+  padding: 0;
 }
 
 .order-form__section {
+  margin: 0;
   margin-bottom: 42px;
+  padding: 0 30px;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
 
 .order-form__section:nth-child(2n) {
@@ -12,10 +20,22 @@
   }
 }
 
+.order-form__subsection {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 .order-form__wrapper {
+  padding: 0 30px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 

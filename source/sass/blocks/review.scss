@@ -16,6 +16,7 @@
 
 .review__text {
   margin: 0;
+  margin-bottom: 33px;
 
   font-size: 15px;
   line-height: 30px;
@@ -23,6 +24,8 @@
   @media (min-width: $tablet-width) {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
+
+    font-size: 17px;
   }
 }
 

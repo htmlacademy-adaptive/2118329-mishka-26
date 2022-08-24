@@ -4,9 +4,10 @@
 @import "variables.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page.scss";
+@import "blocks/main-container.scss";
 @import "blocks/main-header.scss";
-@import "blocks/site-navigation.scss";
 @import "blocks/navigation-button.scss";
+@import "blocks/site-navigation.scss";
 @import "blocks/main-page-title.scss";
 @import "blocks/promo-container.scss";
 @import "blocks/categories-navigation.scss";
@@ -16,8 +17,9 @@
 @import "blocks/button.scss";
 @import "blocks/advantage-text.scss";
 @import "blocks/about-us.scss";
-@import "blocks/feedback.scss";
 @import "blocks/review.scss";
+@import "blocks/feedback.scss";
+@import "blocks/switch-button.scss";
 @import "blocks/contact-us.scss";
 @import "blocks/main-footer.scss";
 @import "blocks/modal-cart.scss";
@@ -28,3 +30,4 @@
 @import "blocks/cards-list.scss";
 @import "blocks/item-card.scss";
 @import "blocks/catalog-production.scss";
+@import "blocks/catalog-items.scss";
