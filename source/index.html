@@ -6,13 +6,21 @@
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="page__body">
 
     <header class="main-header main-header--no-js">
       <a class="main-header__logo">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-tablet.svg">
+          <img src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
+        </picture>
       </a>
       <button class="main-header__toggle main-header__toggle--closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -79,7 +87,11 @@
             <dt class="featured-item__attribute">Высота:</dt>
             <dd class="featured-item__value">15 см</dd>
           </dl>
-          <img class="featured-item__image" src="img/featured-basket.jpg" width="260" height="315" alt="Вязаные корзинки">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/featured-basket-desktop.jpg 1x, img/featured-basket-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/featured-basket-tablet.jpg 1x, img/featured-basket-tablet@2x.jpg 2x">
+            <img class="featured-item__image" src="img/featured-basket.jpg" width="260" height="315" srcset="img/featured-basket@2x.jpg 2x" alt="Вязаные корзинки">
+          </picture>
           <p class="featured-item__price">Цена: 990 руб.</p>
           <a class="featured-item__order button" href="form.html">Заказать</a>
         </section>
@@ -141,7 +153,7 @@
     </main>
 
     <footer class="main-footer">
-      <img class="main-footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина 'Мишка'">
+      <img class="main-footer__logo" src="img/logo/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина 'Мишка'">
       <ul class="main-footer__socials">
         <li class="main-footer__item">
           <a class="main-footer__link main-footer__link--vk-link" href="#"><span class="visually-hidden">Мы ВКонтакте</span></a>
