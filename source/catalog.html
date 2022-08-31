@@ -6,13 +6,21 @@
     <title>Мишка: Каталог товаров</title>
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="page__body">
 
     <header class="main-header main-header--no-js">
       <a class="main-header__logo" href="index.html">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-tablet.svg">
+          <img src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
+        </picture>
       </a>
       <button class="main-header__toggle main-header__toggle--closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -61,7 +69,11 @@
           <ul class="catalog-items__list cards-list">
             <li class="cards-list__card">
               <a class="cards-list__link item-card" href="#">
-                <img class="item-card__image" src="img/item-card-bunny.jpg" width="260" height="195" alt="Игрушечный заяц">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/item-card-bunny-desktop.jpg 1x, img/item-card-bunny-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/item-card-bunny-tablet.jpg 1x, img/item-card-bunny-tablet@2x.jpg 2x">
+                  <img class="item-card__image" src="img/item-card-bunny-mobile.jpg" width="260" height="195" srcset="img/item-card-bunny-mobile@2x.jpg 2x" alt="Игрушечный заяц">
+                </picture>
                 <h3 class="item-card__title">Зайчик-попрыгайчик</h3>
                 <p class="item-card__description">Рост 30 см, вес 200 г</p>
                 <p class="item-card__price">1 200 руб.</p>
@@ -70,7 +82,11 @@
             </li>
             <li class="cards-list__card">
               <a class="cards-list__link item-card" href="#">
-                <img class="item-card__image" src="img/item-card-blankets.jpg" width="260" height="195" alt="Вязаная корзина">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/item-card-blankets-desktop.jpg 1x, img/item-card-blankets-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/item-card-blankets-tablet.jpg 1x, img/item-card-blankets-tablet@2x.jpg 2x">
+                  <img class="item-card__image" src="img/item-card-blankets-mobile.jpg" width="260" height="195" srcset="img/item-card-blankets-mobile@2x.jpg 2x" alt="Вязаная корзина">
+                </picture>
                 <h3 class="item-card__title">Корзинка для белья</h3>
                 <p class="item-card__description">Диаметр 15 см, высота 10 см</p>
                 <p class="item-card__price">690 руб.</p>
@@ -93,7 +109,7 @@
         <section class="catalog-production">
           <h2 class="catalog-production__title">Процесс производства</h2>
           <div class="catalog-production__video-wrapper">
-            <video class="catalog-production__video" poster="img/catalog-video-cover.jpg" width="260" height="150">
+            <video class="catalog-production__video" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="260" height="150">
               Производство корзинки
             </video>
           </div>
@@ -105,7 +121,7 @@
     </main>
 
     <footer class="main-footer">
-      <img class="main-footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина 'Мишка'">
+      <img class="main-footer__logo" src="img/logo/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина 'Мишка'">
       <ul class="main-footer__socials">
         <li class="main-footer__item">
           <a class="main-footer__link main-footer__link--vk-link" href="#"><span class="visually-hidden">Мы ВКонтакте</span></a>
