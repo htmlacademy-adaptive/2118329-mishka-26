@@ -10,21 +10,6 @@
   margin-bottom: 30px;
 
   border: 1px solid #ececec;
-
-  @media (max-width: ($tablet-width - 1px)) {
-    max-width: 260px;
-    margin: 0 auto 30px;
-  }
-
-  @media (min-width: $tablet-width) {
-    max-width: 670px;
-    margin: 0 auto 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 315px;
-    margin: 0;
-  }
 }
 
 .cards-list__button {
@@ -38,4 +23,18 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.cards-list__button-icon {
+  opacity: 0.2;
+}
+
+.cards-list__button:hover .cards-list__button-icon {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.cards-list__button:active .cards-list__button-icon {
+  fill: #63d1bb;
+  opacity: 0.3;
 }

@@ -13,6 +13,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/index-review-background@2x.png");
+      background-size: contain;
     }
   }
 }

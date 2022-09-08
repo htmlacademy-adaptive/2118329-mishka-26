@@ -6,20 +6,19 @@
   width: 100%;
   padding: 30px 30px 0;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 79px;
+    left: 0;
+
+    width: 100vw;
+    height: 1px;
+    background-color: #ececec;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 30px 50px 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 80px;
-      left: -50%;
-
-      width: 500%;
-      overflow: hidden;
-      height: 1px;
-      background-color: #ececec;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +41,14 @@
   @media (min-width: $desktop-width) {
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -118,7 +125,7 @@
 
   @media (max-width: $tablet-width) {
     position: absolute;
-    top: 75px;
+    top: 79px;
     right: 0;
     z-index: 1;
 

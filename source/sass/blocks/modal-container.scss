@@ -1,0 +1,35 @@
+.modal-container {
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal-container__content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 320px;
+  max-width: 566px;
+  min-height: 336px;
+
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  background-color: #ffffff;
+}
+
+.modal-open {
+  display: block;
+  position: fixed;
+}
+
+.modal-closed {
+  display: none;
+}

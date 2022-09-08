@@ -18,12 +18,35 @@
     padding: 0;
     border: none;
   }
+}
 
-  &:hover {
-    opacity: 0.6;
+.navigation-button__icon {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    top: 3px;
+    left: -45px;
   }
+}
 
-  &:active {
-    opacity: 0.3;
+.navigation-button:hover {
+  opacity: 0.6;
+
+  .navigation-button__icon {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+}
+
+.navigation-button:active {
+  opacity: 0.3;
+
+  .navigation-button__icon {
+    fill: #63d1bb;
+    opacity: 1;
   }
 }
