@@ -16,7 +16,6 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  max-width: 320px;
 
   @media (min-width: $tablet-width) {
     grid-row: 2 / 3;
@@ -78,6 +77,10 @@
   @media (min-width: $tablet-width) {
     position: relative;
     padding-left: 30px;
+
+    &:first-child {
+      padding-left: 70px;
+    }
 
     &:last-child {
       padding-left: 70px;

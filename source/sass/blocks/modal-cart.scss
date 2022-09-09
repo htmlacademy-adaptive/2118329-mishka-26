@@ -1,5 +1,6 @@
 .modal-cart__title {
   margin: 0;
+  padding: 28px 75px 15px;
 
   font-weight: 700;
   font-size: 25px;
@@ -9,10 +10,45 @@
   color: #000000;
 }
 
+.modal-cart__form {
+  padding: 0 30px;
+}
+
 .modal-cart__text {
   margin: 0;
+  margin-bottom: 20px;
 
   font-size: 15px;
   line-height: 30px;
   text-align: center;
+}
+
+.modal-cart__label {
+  display: inline-block;
+
+  width: 40px;
+  height: 16px;
+
+  border: 2px solid #444444;
+  padding: 18px 19px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.modal-cart__option {
+  @include visually-hidden;
+}
+
+.modal-cart__option:checked + .modal-cart__label {
+  border: 2px solid #63d1bb;
+}
+
+.modal-cart__button {
+  margin: 30px 30px 45px;
 }

@@ -1,44 +1,40 @@
 .featured-item {
+  position: relative;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: 1fr 1fr;
-
     padding: 0 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 175px 1fr 1fr;
   }
 }
 
 .featured-item__wrapper {
+  position: relative;
   margin-bottom: 35px;
 
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 
-  @media (min-width: $tablet-width) {
-    grid-row: 1 / 2;
-    grid-column: 1 / -1;
-
-    flex-direction: row;
-  }
-
   @media (min-width: $desktop-width) {
-    justify-content: flex-start;
+    max-width: 545px;
+    margin-left: 175px;
   }
 }
 
 .featured-item__title {
   order: 1;
 
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    max-width: 100px;
+    text-align: center;
+  }
+
   @media (min-width: $desktop-width) {
-    order: 0;
-    margin-right: 45px;
+    left: -150px;
   }
 }
 
@@ -49,15 +45,15 @@
   font-size: 15px;
 
   @media (min-width: $tablet-width) {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
+    max-width: 292px;
 
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2 / 3;
+    margin-bottom: 60px;
+    margin-left: 175px;
   }
 }
 
@@ -70,12 +66,11 @@
   max-width: 291px;
 
   @media (min-width: $tablet-width) {
-    grid-row: 3 / 4;
-    grid-column: 1 / 2;
+    margin: 0 auto 28px 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2 / 3;
+    margin: 0 0 110px 175px;
   }
 }
 
@@ -96,13 +91,18 @@
   z-index: -1;
 
   @media (min-width: $tablet-width) {
-    grid-row: 2 / 6;
-    grid-column: 2 / 3;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+
+    margin: 0;
+    width: 334px;
+    height: 404px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-row: 1 / -1;
-    grid-column: 3 / 4;
+    width: 525px;
+    height: 636px;
   }
 }
 
@@ -115,14 +115,13 @@
   font-size: 17px;
 
   @media (min-width: $tablet-width) {
-    grid-row: 4 / 5;
-    grid-column: 1 / 2;
+    max-width: 292px;
 
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2 / 3;
+    margin-left: 175px;
   }
 }
 
@@ -133,11 +132,10 @@
   width: 260px;
 
   @media (min-width: $tablet-width) {
-    grid-row: 5 / 6;
-    grid-column: 1 / 2;
+    margin: 0 auto 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2 / 3;
+    margin-left: 175px;
   }
 }

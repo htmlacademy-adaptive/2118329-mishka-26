@@ -1,6 +1,27 @@
 .contact-us {
   position: relative;
 
+  ::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: -15px;
+      right: 40px;
+
+      width: 47px;
+      height: 81px;
+
+      background-image: url("../../img/flag-image.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -15px;
+      left: 60px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 175px;
 

@@ -1,16 +1,12 @@
 .promo-container {
-  display: grid;
-  grid-template-rows: 73px auto 120px auto;
-
-  min-height: 373px;
-
   background-color: #f9f9f9;
   background-image: url("../../img/hero-background-mobile.jpg");
-  background-position: center;
+  background-position-x: center;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/hero-background-mobile@2x.jpg");
+    background-size: contain;
   }
 
   @media (min-width: $tablet-width) {
@@ -25,9 +21,9 @@
 }
 
 .promo-container__title {
-  grid-row: 2 / 3;
-}
+  padding: 100px 30px 115px;
 
-.promo-container__list {
-  grid-row: 4 / 5;
+  @media (min-width: $tablet-width) {
+    padding: 135px 30px 375px;
+  }
 }
