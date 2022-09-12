@@ -115,6 +115,11 @@
   background-color: transparent;
   border-radius: 50%;
   border: 2px solid #444444;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .order-fieldset__field--radio:checked {
@@ -133,11 +138,6 @@
     @media (min-width: $tablet-width) {
       width: 22px;
       height: 22px;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 52px;
-      height: 52px;
     }
   }
 }
