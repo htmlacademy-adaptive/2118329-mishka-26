@@ -10,6 +10,8 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
+import terser from 'gulp-terser';
+import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
@@ -62,13 +64,20 @@ const sprite = () => {
     .pipe(gulp.dest('build/img'))
 }
 
+//HTML
+
+export const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('build'))
+}
+
 //Copy
 
 const copy = (done) => {
   gulp.src([
     'source/*.ico',
     'source/*.webmanifest',
-    'source/*.html',
   ], {
     base: 'source'
   })
@@ -88,8 +97,11 @@ const copyFonts = (done) => {
   done()
 }
 
-const copyJS = (done) => {
+//Scripts
+
+export const minimizeScripts = (done) => {
   gulp.src('source/js/*.js')
+    .pipe(terser())
     .pipe(gulp.dest('build/js'))
   done()
 }
@@ -125,9 +137,10 @@ const watcher = () => {
 
 export const build = gulp.series(
   clean,
+  html,
   copy,
   copyFonts,
-  copyJS,
+  minimizeScripts,
   images,
   gulp.parallel(
     createWebP,
@@ -140,9 +153,10 @@ export const build = gulp.series(
 
 export default gulp.series(
   clean,
+  html,
   copy,
   copyFonts,
-  copyJS,
+  minimizeScripts,
   copyImages,
   gulp.parallel(
     createWebP,
