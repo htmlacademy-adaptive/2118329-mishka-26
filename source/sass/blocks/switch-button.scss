@@ -1,5 +1,6 @@
 .switch-button {
-  padding: 24px 53px;
+  display: block;
+  padding: 24px 64px;
 
   background-color: transparent;
   border: 1px solid #ececec;
@@ -15,6 +16,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 24px 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 42px;
   }
 
   &:hover {

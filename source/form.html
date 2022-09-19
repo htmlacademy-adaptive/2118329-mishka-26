@@ -10,6 +10,8 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   </head>
 
   <body class="page__body">
@@ -19,7 +21,7 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-tablet.svg">
-          <img src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
+          <img class="main-header__logo-icon" src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
         </picture>
       </a>
       <button class="main-header__toggle main-header__toggle--closed" type="button">

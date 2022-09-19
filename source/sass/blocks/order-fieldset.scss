@@ -6,14 +6,16 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 160px auto;
+    grid-template-columns: 109px auto;
     column-gap: 60px;
     grid-template-rows: auto;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
+    max-width: $width-limit;
     margin: 0 auto 50px;
+
+    column-gap: 66px;
   }
 }
 
@@ -21,14 +23,14 @@
   padding-bottom: 30px;
   position: relative;
 
-  @media (max-width: ($tablet-width - 1px)) {
+  @media (max-width: ($tablet-width - 0.1px)) {
     &::after {
       content: "";
       position: absolute;
-      top: 8px;
-      left: 70px;
+      top: 6px;
+      left: 60px;
 
-      width: 800px;
+      width: 200px;
       height: 1px;
       background-color: #62d1ba;
     }
@@ -36,9 +38,6 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-    align-self: center;
-
-    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,8 +56,13 @@
     &--long {
       column-count: 2;
 
+      @media (min-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+      }
+
       @media (min-width: $desktop-width) {
-        column-count: 3;
+        grid-template-columns: 263px 265px 1fr;
       }
     }
   }
@@ -67,11 +71,11 @@
 .order-fieldset__item {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 20px;
+  column-gap: 23px;
   align-items: center;
   justify-content: start;
 
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 
   &--name {
     grid-template-columns: 1fr;
@@ -91,6 +95,7 @@
 
   @media (min-width: $desktop-width) {
     column-gap: 28px;
+    max-width: 700px;
   }
 }
 
@@ -110,8 +115,8 @@
   position: relative;
   appearance: none;
   margin: 0;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 39px;
   background-color: transparent;
   border-radius: 50%;
   border: 2px solid #444444;
@@ -149,6 +154,11 @@
   width: 38px;
   height: 38px;
   border: 2px solid #444444;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .order-fieldset__field--checkbox:checked {
@@ -163,6 +173,11 @@
     height: 10px;
     border-left: 1px solid #000000;
     border-bottom: 1px solid #000000;
+
+    @media (min-width: $tablet-width) {
+      width: 27px;
+      height: 14px;
+    }
   }
 }
 
@@ -184,10 +199,14 @@
   }
 
   &--comment {
-    min-height: 142px;
+    min-height: 103px;
     padding: 17px;
     border: 2px solid #000000;
     box-shadow: none;
+
+    @media (min-width: $desktop-width) {
+      max-width: 662px;
+    }
 
     &:hover,
     &:focus {
@@ -200,7 +219,7 @@
 .order-fieldset__icon {
   position: absolute;
   bottom: 16px;
-  right: 8px;
+  right: 3px;
 
   opacity: 0.2;
 
@@ -209,7 +228,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 8px;
+    left: 841px;
   }
 }
 

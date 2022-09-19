@@ -10,7 +10,7 @@
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
-  @media (max-width: ($tablet-width - 1px)) {
+  @media (max-width: ($tablet-width - 0.1px)) {
     max-width: 260px;
     margin: 0 auto 30px;
   }
@@ -21,6 +21,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
+
     padding-left: 760px;
     min-height: 455px;
 
@@ -40,15 +42,21 @@
   line-height: 24px;
   color: #000000;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-left: 107px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 80px 60px 0 30px;
+    padding: 96px 60px 0 0;
+    margin-bottom: 28px;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 30px;
-    left: 25px;
+    top: 33px;
+    left: 33px;
 
     width: 32px;
     height: 22px;
@@ -56,12 +64,27 @@
     background-image: url("../../img/video-icon.svg");
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 18px;
+      left: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 46px;
+      left: 0;
+    }
   }
 }
 
 .catalog-production__video-wrapper {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 10px;
+    max-width: 668px;
+  }
 
   &::after {
     content: "";
@@ -131,6 +154,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 683px;
     background-image: url("../../img/video-cover-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -140,13 +164,31 @@
 }
 
 .catalog-production__description {
-  margin: 0 30px 40px;
+  margin: 0 32px 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px 40px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px;
+  }
 }
 
 .catalog-production__button {
+  width: 148px;
   margin: 0 auto 33px;
 
+  @media (min-width: $tablet-width) {
+    width: 541px;
+    margin-bottom: 44px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 46px;
+    width: 188px;
+    margin: 0 auto 46px 0;
   }
 }
