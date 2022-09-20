@@ -4,11 +4,11 @@
 
   background-color: #f1f1f1;
 
-  @media (max-width: ($tablet-width - 1px)) {
+  @media (max-width: ($tablet-width - 0.1px)) {
     &::after {
       content: "";
       position: absolute;
-      top: 50%;
+      top: 54%;
       right: 30px;
 
       width: calc(100% - 60px);
@@ -22,7 +22,12 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 50px;
+    padding: 47px 45px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    padding: 57px 45px 0;
   }
 }
 
@@ -40,7 +45,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding-right: 50px;
+    padding-right: 60px;
     vertical-align: middle;
   }
 }
@@ -52,6 +57,10 @@
   transform: translateY(-50%);
 
   fill: #63d1bb;
+
+  @media (min-width: $desktop-width) {
+    right: 5px;
+  }
 }
 
 .main-footer__credentials-link:hover .main-footer__credentials-logo {
@@ -64,8 +73,15 @@
 }
 
 .main-footer__logo {
-  @media (max-width: ($tablet-width - 1px)) {
+  margin-top: 3px;
+  margin-left: 5px;
+
+  @media (max-width: ($tablet-width - 0.1px)) {
     @include visually-hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -6px;
   }
 
   &:hover {
@@ -81,7 +97,7 @@
 .main-footer__socials {
   display: flex;
 
-  margin: 0 auto 50px;
+  margin: 0 auto 52px;
   padding: 0;
 
   max-width: 142px;
@@ -90,6 +106,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 50px;
   }
 }
 
@@ -100,7 +120,7 @@
   width: 28px;
 
   &:not(:nth-child(3n)) {
-    margin-right: 33px;
+    margin-right: 29px;
   }
 }
 
@@ -111,4 +131,30 @@
 .main-footer__link:active .main-footer__icon {
   fill: #46c1ae;
   opacity: 0.3;
+}
+
+.main-footer__icon {
+  &--vk-link {
+    margin-top: 5px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+
+  &--youtube-link {
+    margin-top: 6px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+
+  &--telegram-link {
+    margin-top: 6px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
 }

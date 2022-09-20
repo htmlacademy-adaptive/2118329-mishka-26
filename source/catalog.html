@@ -10,6 +10,8 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   </head>
 
   <body class="page__body">
@@ -19,7 +21,7 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-tablet.svg">
-          <img src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
+          <img class="main-header__logo-icon" src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
         </picture>
       </a>
       <button class="main-header__toggle main-header__toggle--closed" type="button">
@@ -66,7 +68,7 @@
 
     <main class="main-container">
       <header class="hero">
-        <div class="hero__container">
+        <div class="hero__container hero__container--catalog">
           <h1 class="hero__title main-page-title main-page-title--heading">Каталог товаров</h1>
         </div>
       </header>
@@ -88,12 +90,12 @@
                   <p class="item-card__price">1 200 руб.</p>
                 </div>
               </a>
-              <button class="cards-list__button">
+              <a class="cards-list__button" href="form.html">
                 <svg class="cards-list__button-icon" width="20" height="19">
                   <use href="img/sprite.svg#catalog-cart"></use>
                 </svg>
                 <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              </a>
             </li>
             <li class="cards-list__card">
               <a class="cards-list__link item-card" href="#">
@@ -108,12 +110,12 @@
                   <p class="item-card__price">690 руб.</p>
                 </div>
               </a>
-              <button class="cards-list__button">
+              <a class="cards-list__button" href="form.html">
                 <svg class="cards-list__button-icon" width="20" height="19">
                   <use href="img/sprite.svg#catalog-cart"></use>
                 </svg>
                 <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              </a>
             </li>
             <li class="cards-list__card">
               <a class="cards-list__link item-card" href="#">
@@ -128,12 +130,12 @@
                   <p class="item-card__price">1 500 руб.</p>
                 </div>
               </a>
-              <button class="cards-list__button">
+              <a class="cards-list__button" href="form.html">
                 <svg class="cards-list__button-icon" width="20" height="19">
                   <use href="img/sprite.svg#catalog-cart"></use>
                 </svg>
                 <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              </a>
             </li>
           </ul>
         </section>

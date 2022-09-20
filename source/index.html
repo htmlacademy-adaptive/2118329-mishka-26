@@ -10,6 +10,8 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   </head>
 
   <body class="page__body">
@@ -17,9 +19,9 @@
     <header class="main-header main-header--no-js">
       <a class="main-header__logo">
         <picture>
-          <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-desktop.svg">
+          <source media="(min-width: 1150px)" width="149" height="72" srcset="img/logo/mishka-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-tablet.svg">
-          <img src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
+          <img class="main-header__logo-icon" src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
         </picture>
       </a>
       <button class="main-header__toggle main-header__toggle--closed" type="button">
@@ -68,11 +70,11 @@
       <h1 class="visually-hidden">Интернет-магазин "Мишка".</h1>
       <div class="main-container__promo">
         <section class="promo-container">
-            <h2 class="promo-container__title main-page-title main-page-title--heading">Милые штуки ручной работы для дома</h2>
+            <h2 class="promo-container__title main-page-title main-page-title--heading">Милые штуки ручной <br>работы для дома</h2>
             <ul class="promo-container__list categories-navigation">
               <li class="categories-navigation__item">
                 <a class="categories-navigation__link category-label category-label--interior" href="#">
-                  <svg class="category-label__icon" width="60" height="62">
+                  <svg class="category-label__icon category-label__icon--interior" width="60" height="62">
                     <use href="img/sprite.svg#interior"></use>
                   </svg>
                   <span class="category-label__text">Предметы интерьера</span>
@@ -80,7 +82,7 @@
               </li>
               <li class="categories-navigation__item">
                 <a class="categories-navigation__link category-label category-label--toys" href="#">
-                  <svg class="category-label__icon" width="60" height="60">
+                  <svg class="category-label__icon category-label__icon--toys" width="60" height="60">
                     <use href="img/sprite.svg#toy"></use>
                   </svg>
                   <span class="category-label__text">Детские игрушки</span>
@@ -121,12 +123,12 @@
         <section class="about-us">
           <h2 class="about-us__title main-page-title">Коротко о нас:</h2>
           <ul class="about-us__advantages">
-            <li class="about-us__advantage advantage-text advantage-text--materials">Экологически чистые материалы</li>
-            <li class="about-us__advantage advantage-text advantage-text--price">Скандинавский стиль по российской цене</li>
-            <li class="about-us__advantage advantage-text advantage-text--likes">Увеличивает лайки на фотографиях</li>
-            <li class="about-us__advantage advantage-text advantage-text--handmade">Связано вручную с любовью и умилением</li>
+            <li class="about-us__advantage advantage-text advantage-text--materials">Экологически <br>чистые материалы</li>
+            <li class="about-us__advantage advantage-text advantage-text--price">Скандинавский стиль <br>по российской цене</li>
+            <li class="about-us__advantage advantage-text advantage-text--likes">Увеличивает лайки <br>на фотографиях</li>
+            <li class="about-us__advantage advantage-text advantage-text--handmade">Связано вручную <br>с любовью и умилением</li>
             <li class="about-us__advantage advantage-text advantage-text--local">Поддержка отечественного производителя</li>
-            <li class="about-us__advantage advantage-text advantage-text--package">Поставляется в подарочной упаковке</li>
+            <li class="about-us__advantage advantage-text advantage-text--package">Поставляется <br>в подарочной упаковке</li>
           </ul>
         </section>
       </div>
@@ -136,12 +138,11 @@
           <ul class="feedback__list review">
             <li class="review__item">
               <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-                у популярных инстамамочек.
-                В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <span class="review__author">Анастасия Красильникова
-                <span class="review__author-socials">@misssssiskras</span>
-              </span>
+                <br class="review__break">&nbsp;у популярных инстамамочек.
+                <br class="review__break">&nbsp;В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                <br class="review__break">&nbsp;и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <span class="review__author">Анастасия Красильникова</span>
+              <br><span class="review__socials">@misssssiskras</span>
             </li>
           </ul>
           <div class="feedback__buttons">
@@ -164,11 +165,11 @@
               <a class="contact-us__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </dd>
             <dt class="contact-us__type">адрес:</dt>
-            <dd class="contact-us__details">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
+            <dd class="contact-us__details">г. Санкт-Петербург <br>ул. Большая Конюшенная д. 19/8, офис 101</dd>
           </dl>
           <iframe class="contact-us__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.787808984176!2d30.316904634918217!3d59.96884321162878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1660834491295!5m2!1sen!2sru"
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Наш офис на карте"></iframe>
-          <a class="contact-us__write button" href="#">Написать</a>
+          <a class="contact-us__write button" href="#">Напишите нам</a>
         </section>
       </div>
     </main>
