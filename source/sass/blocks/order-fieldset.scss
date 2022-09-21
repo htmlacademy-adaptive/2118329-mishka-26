@@ -161,6 +161,10 @@
   }
 }
 
+.order-fieldset__field--checkbox + .order-fieldset__label {
+  max-width: 150px;
+}
+
 .order-fieldset__field--checkbox:checked {
   &::before {
     content: "";

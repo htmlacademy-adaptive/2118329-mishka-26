@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 }
 
@@ -35,7 +36,7 @@
 .cards-list__button {
   position: absolute;
   bottom: 30px;
-  right: 32px;
+  right: 27px;
 
   width: 20px;
   height: 20px;
@@ -45,7 +46,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    right: 38px;
+    right: 32px;
   }
 }
 

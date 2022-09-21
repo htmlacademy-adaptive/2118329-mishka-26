@@ -50,6 +50,10 @@
 
 .featured-item__name {
   line-height: 33px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 600px;
+  }
 }
 
 .featured-item__title {

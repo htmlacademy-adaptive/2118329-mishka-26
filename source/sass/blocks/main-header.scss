@@ -68,8 +68,6 @@
 
 .main-header__toggle {
   position: absolute;
-  // top: 30px;
-  // right: 30px;
   top: 38px;
   right: 33px;
 
@@ -83,6 +81,10 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-header--no-js {
+  padding: 30px 0 0;
 }
 
 .main-header--no-js .main-header__toggle {
@@ -128,6 +130,7 @@
   display: block;
   position: relative;
   top: 55px;
+  width: 100vw;
 }
 
 .main-header__navigation {
@@ -172,5 +175,6 @@
   @media (min-width: $tablet-width) {
     bottom: 0;
     right: 50px;
+    max-width: 300px;
   }
 }

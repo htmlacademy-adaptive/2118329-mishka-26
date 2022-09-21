@@ -160,6 +160,7 @@
         <svg class="main-footer__logo" width="102" height="34">
           <use href="img/sprite.svg#footer-logo"></use>
         </svg>
+        <span class="visually-hidden">Интернет-магазин "Мишка"</span>
       </a>
       <ul class="main-footer__socials">
         <li class="main-footer__item">
@@ -202,12 +203,20 @@
         <h2 class="modal-cart__title">Добавить в корзину</h2>
         <form class="modal-cart__form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="modal-cart__text">Выберите размер:</p>
-          <input class="modal-cart__option modal-cart__option--s" id="s-size" type="radio" name="size" value="s" checked>
-          <label class="modal-cart__label" for="s-size">S</label>
-          <input class="modal-cart__option modal-cart__option--m" id="m-size" type="radio" name="size" value="m">
-          <label class="modal-cart__label" for="m-size">M</label>
-          <input class="modal-cart__option modal-cart__option--l" id="l-size" type="radio" name="size" value="l">
-          <label class="modal-cart__label" for="l-size">L</label>
+          <ul class="modal-cart__list">
+            <li class="modal-cart__list-item">
+              <input class="modal-cart__option modal-cart__option--s" id="s-size" type="radio" name="size" value="s" checked>
+              <label class="modal-cart__label" for="s-size">S</label>
+            </li>
+            <li class="modal-cart__list-item">
+              <input class="modal-cart__option modal-cart__option--m" id="m-size" type="radio" name="size" value="m">
+              <label class="modal-cart__label" for="m-size">M</label>
+            </li>
+            <li class="modal-cart__list-item">
+              <input class="modal-cart__option modal-cart__option--l" id="l-size" type="radio" name="size" value="l">
+              <label class="modal-cart__label" for="l-size">L</label>
+            </li>
+          </ul>
           <button class="modal-cart__button button button--colored" type="submit">Добавить</button>
         </form>
       </div>

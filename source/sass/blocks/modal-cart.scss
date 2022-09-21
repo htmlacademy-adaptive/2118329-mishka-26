@@ -36,6 +36,16 @@
   }
 }
 
+.modal-cart__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.modal-cart__list-item {
+  display: inline-block;
+}
+
 .modal-cart__label {
   display: inline-block;
 
