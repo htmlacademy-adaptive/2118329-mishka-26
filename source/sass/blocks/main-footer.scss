@@ -96,6 +96,7 @@
 
 .main-footer__socials {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0 auto 52px;
   padding: 0;
@@ -113,15 +114,17 @@
   }
 }
 
+.main-footer__item {
+  &:not(:nth-child(3n)) {
+    margin-right: 29px;
+  }
+}
+
 .main-footer__link {
   display: inline-block;
 
   height: 22px;
   width: 28px;
-
-  &:not(:nth-child(3n)) {
-    margin-right: 29px;
-  }
 }
 
 .main-footer__link:hover .main-footer__icon {

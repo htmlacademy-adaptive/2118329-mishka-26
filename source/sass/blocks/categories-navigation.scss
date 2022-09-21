@@ -5,12 +5,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .categories-navigation__item {
   align-self: flex-end;
-  max-height: 120px;
 
   @media (min-width: $tablet-width) {
     width: 50%;

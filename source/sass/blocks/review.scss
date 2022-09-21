@@ -26,18 +26,6 @@
   }
 }
 
-.review__break {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    &:first-child {
-      display: inline;
-    }
-  }
-}
-
 .review__author {
   display: inline-block;
   padding-bottom: 7px;
