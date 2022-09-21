@@ -1,0 +1,97 @@
+.advantage-text {
+  position: relative;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  &--materials::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 8px;
+
+    width: 33px;
+    height: 38px;
+
+    background-image: url("../../img/advantage-materials.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--price::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../../img/advantage-price.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--likes::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 8px;
+
+    width: 34px;
+    height: 27px;
+
+    background-image: url("../../img/advantage-likes.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--handmade::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 3px;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../../img/advantage-handmade.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--local::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -6px;
+
+    width: 55px;
+    height: 23px;
+
+    background-image: url("../../img/advantage-local.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--package::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3px;
+
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../../img/advantage-packaging.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

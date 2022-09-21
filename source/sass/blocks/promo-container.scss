@@ -1,0 +1,38 @@
+.promo-container {
+  margin-top: -17px;
+
+  background-color: #f9f9f9;
+  background-image: url("../../img/hero-background-mobile.jpg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/hero-background-mobile@2x.jpg");
+    background-size: contain;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+
+    background-image: url("../../img/hero-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/hero-background-desktop@2x.jpg");
+    }
+  }
+}
+
+.promo-container__title {
+  padding: 89px 30px 120px;
+
+  @media (min-width: $tablet-width) {
+    padding: 153px 30px 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 156px 0 356px;
+
+    max-width: 615px;
+  }
+}

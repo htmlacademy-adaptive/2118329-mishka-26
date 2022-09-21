@@ -1,0 +1,160 @@
+.item-card {
+  position: relative;
+  display: block;
+
+  text-decoration: none;
+  color: inherit;
+
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 0.1px)) {
+    min-height: 334px;
+  }
+}
+
+.item-card__container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 150px;
+
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 0.1px)) {
+    max-width: 50%;
+    min-height: 334px;
+    margin-left: auto;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 169px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 72px;
+    left: 27px;
+
+    width: 80%;
+    height: 1px;
+
+    background-color: #ececec;
+  }
+}
+
+.cards-list__card:nth-child(3) .item-card__container {
+  min-height: 176px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 169px;
+  }
+}
+
+.cards-list__card:nth-child(3) .item-card__title {
+  @media (min-width: $tablet-width) {
+    padding: 26px 60px 0 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 60px 0 28px;
+  }
+}
+
+.cards-list__card:nth-child(3) .item-card__description {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.item-card__image {
+  width: 100%;
+  object-fit: contain;
+
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+}
+
+.item-card__title {
+  margin: 0;
+  padding: 0 27px;
+  max-width: 260px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 32px 0;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 28px;
+  }
+}
+
+.item-card__description {
+  position: relative;
+  margin: 0;
+  padding: 7px 27px 0;
+  max-width: 260px;
+
+  line-height: 30px;
+
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 33px 0;
+
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 6px 27px 0;
+    flex-grow: 0;
+    margin-bottom: 60px;
+  }
+}
+
+.item-card__price {
+  position: relative;
+
+  margin: 0;
+  padding: 0 27px 24px;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    max-width: 115px;
+    padding: 0 32px 24px;
+
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 27px 0;
+  }
+}

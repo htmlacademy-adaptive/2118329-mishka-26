@@ -1,0 +1,243 @@
+.order-fieldset {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 109px auto;
+    column-gap: 60px;
+    grid-template-rows: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $width-limit;
+    margin: 0 auto 50px;
+
+    column-gap: 66px;
+  }
+}
+
+.order-fieldset__name {
+  padding-bottom: 30px;
+  position: relative;
+
+  @media (max-width: ($tablet-width - 0.1px)) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 60px;
+
+      width: 200px;
+      height: 1px;
+      background-color: #62d1ba;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: end;
+  }
+}
+
+.order-fieldset__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+
+    &--long {
+      column-count: 2;
+
+      @media (min-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+      }
+
+      @media (min-width: $desktop-width) {
+        grid-template-columns: 263px 265px 1fr;
+      }
+    }
+  }
+}
+
+.order-fieldset__item {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 23px;
+  align-items: center;
+  justify-content: start;
+
+  margin-bottom: 14px;
+
+  &--name {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto;
+      column-gap: 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 28px;
+    max-width: 700px;
+  }
+}
+
+.order-fieldset__field {
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+.order-fieldset__field--radio {
+  position: relative;
+  appearance: none;
+  margin: 0;
+  width: 40px;
+  height: 39px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #444444;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.order-fieldset__field--radio:checked {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #62d1ba;
+
+    @media (min-width: $tablet-width) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+.order-fieldset__field--checkbox {
+  position: relative;
+  appearance: none;
+  margin: 0;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #444444;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.order-fieldset__field--checkbox + .order-fieldset__label {
+  max-width: 150px;
+}
+
+.order-fieldset__field--checkbox:checked {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%) rotate(-45deg);
+
+    width: 20px;
+    height: 10px;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+
+    @media (min-width: $tablet-width) {
+      width: 27px;
+      height: 14px;
+    }
+  }
+}
+
+.order-fieldset__textfield {
+  padding: 16px 0 18px;
+
+  background-color: transparent;
+  border: none;
+  box-shadow: inset 0 -2px 0 #000000;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 -2px 0 #62d1ba;
+    outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 0 18px 18px;
+  }
+
+  &--comment {
+    min-height: 103px;
+    padding: 17px;
+    border: 2px solid #000000;
+    box-shadow: none;
+
+    @media (min-width: $desktop-width) {
+      max-width: 662px;
+    }
+
+    &:hover,
+    &:focus {
+      border: 2px solid #62d1ba;
+      box-shadow: none;
+    }
+  }
+}
+
+.order-fieldset__icon {
+  position: absolute;
+  bottom: 16px;
+  right: 3px;
+
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    right: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 841px;
+  }
+}
+
+.order-fieldset__textfield:hover + .order-fieldset__icon,
+.order-fieldset__textfield:focus + .order-fieldset__icon {
+  fill: #62d1ba;
+  opacity: 1;
+}

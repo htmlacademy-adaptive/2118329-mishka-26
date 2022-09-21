@@ -1,0 +1,85 @@
+.category-label {
+  position: relative;
+  display: block;
+  padding: 26px 0 29px 29px;
+
+
+  color: #ffffff;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 0 33px 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    padding-bottom: 36px;
+  }
+}
+
+.category-label--interior {
+  background-color: #63d1bb;
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+}
+
+.category-label--toys {
+  background-color: #56c3b2;
+
+  &:hover {
+    background-color: #46c1ae;
+  }
+}
+
+.category-label__text {
+  display: inline-block;
+  max-width: 130px;
+}
+
+.category-label__icon {
+  position: absolute;
+  top: 24px;
+  right: 27px;
+
+  @media (min-width: $tablet-width) {
+    top: 32px;
+    right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 32px;
+    right: 35px;
+  }
+
+  opacity: 0.3;
+
+  &--interior {
+    top: 23px;
+    right: 27px;
+
+    @media (min-width: $tablet-width) {
+      top: 29px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 30px;
+      right: 27px;
+    }
+  }
+}
+
+.category-label:hover .category-label__icon {
+  opacity: 0.5;
+}
+
+.category-label:active .category-label__icon {
+  opacity: 0.1;
+}

@@ -1,0 +1,163 @@
+.main-footer {
+  position: relative;
+  padding: 25px 30px 23px;
+
+  background-color: #f1f1f1;
+
+  @media (max-width: ($tablet-width - 0.1px)) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 54%;
+      right: 30px;
+
+      width: calc(100% - 60px);
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 47px 45px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    padding: 57px 45px 0;
+  }
+}
+
+.main-footer__credentials {
+  position: relative;
+  display: block;
+
+  max-width: 180px;
+  margin: 0 auto;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-right: 60px;
+    vertical-align: middle;
+  }
+}
+
+.main-footer__credentials-logo {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  fill: #63d1bb;
+
+  @media (min-width: $desktop-width) {
+    right: 5px;
+  }
+}
+
+.main-footer__credentials-link:hover .main-footer__credentials-logo {
+  fill: #46c1ae;
+}
+
+.main-footer__credentials-link:active .main-footer__credentials-logo {
+  opacity: 0.3;
+  fill: #46c1ae;
+}
+
+.main-footer__logo {
+  margin-top: 3px;
+  margin-left: 5px;
+
+  @media (max-width: ($tablet-width - 0.1px)) {
+    @include visually-hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -6px;
+  }
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+.main-footer__socials {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 auto 52px;
+  padding: 0;
+
+  max-width: 142px;
+
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 50px;
+  }
+}
+
+.main-footer__item {
+  &:not(:nth-child(3n)) {
+    margin-right: 29px;
+  }
+}
+
+.main-footer__link {
+  display: inline-block;
+
+  height: 22px;
+  width: 28px;
+}
+
+.main-footer__link:hover .main-footer__icon {
+  fill: #46c1ae;
+}
+
+.main-footer__link:active .main-footer__icon {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
+.main-footer__icon {
+  &--vk-link {
+    margin-top: 5px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+
+  &--youtube-link {
+    margin-top: 6px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+
+  &--telegram-link {
+    margin-top: 6px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+}

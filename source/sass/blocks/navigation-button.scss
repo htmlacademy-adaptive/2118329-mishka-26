@@ -1,0 +1,60 @@
+.navigation-button {
+  position: relative;
+
+  padding: 28px 0 26px 76px;
+  display: block;
+  border-top: 1px solid #ececec;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  text-decoration: none;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.navigation-button__icon {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    top: 3px;
+    left: -54px;
+
+    &--search {
+      left: -64px;
+
+      @media (min-width: $desktop-width) {
+        left: -50px;
+      }
+    }
+  }
+}
+
+.navigation-button:hover {
+  opacity: 0.6;
+
+  .navigation-button__icon {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+}
+
+.navigation-button:active {
+  opacity: 0.3;
+
+  .navigation-button__icon {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,180 @@
+.main-header {
+  position: relative;
+
+  box-sizing: border-box;
+  min-height: 80px;
+  width: 100%;
+  padding: 30px 30px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 88px;
+    left: 0;
+
+    width: 100vw;
+    height: 1px;
+    background-color: #ececec;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 50px 0;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $width-limit;
+    margin: 0 auto;
+  }
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    left: 48px;
+    transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-header__logo-icon {
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+}
+
+.main-header__toggle {
+  position: absolute;
+  top: 38px;
+  right: 33px;
+
+  width: 20px;
+  height: 14px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header--no-js {
+  padding: 30px 0 0;
+}
+
+.main-header--no-js .main-header__toggle {
+  display: none;
+}
+
+.main-header__toggle--closed::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 2px;
+
+  width: 20px;
+  height: 2px;
+  background-color: #231f20;
+
+  box-shadow: 0 5px 0 0 #231f20, 0 11px 0 0 #231f20;
+}
+
+.main-header__toggle--open {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-header--no-js .main-header__navigation {
+  display: block;
+  position: relative;
+  top: 55px;
+  width: 100vw;
+}
+
+.main-header__navigation {
+  &--closed {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+  }
+
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 79px;
+    right: 0;
+    z-index: 1;
+
+    width: 100%;
+
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    background-color: transparent;
+  }
+}
+
+.main-header__comment {
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+
+  font-size: 15px;
+
+  @media (max-width: ($tablet-width - 0.1px)) {
+    @include visually-hidden;
+  }
+
+  @media (min-width: $tablet-width) {
+    bottom: 0;
+    right: 50px;
+    max-width: 300px;
+  }
+}

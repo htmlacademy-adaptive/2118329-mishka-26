@@ -1,0 +1,42 @@
+.review {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.review__block {
+  margin: 0;
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 34px;
+
+  font-size: 15px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
+    padding-right: 50px;
+  }
+}
+
+.review__author {
+  display: inline-block;
+  padding-bottom: 7px;
+
+  font-weight: 700;
+  font-size: 17px;
+  color: #000000;
+}
+
+.review__socials {
+  font-weight: 400;
+  font-size: 17px;
+  color: #000000;
+}
