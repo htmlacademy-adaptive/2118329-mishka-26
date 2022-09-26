@@ -20,7 +20,7 @@
       width: 100%;
       height: 24px;
 
-      background-image: url("../../img/wavy-border-white.svg");
+      background-image: url("../img/wavy-border-white.svg");
     }
 
     @media (min-width: $desktop-width) {
@@ -30,7 +30,7 @@
       &::after {
         bottom: -7px;
         left: 13px;
-        background-image: url("../../img/wavy-border-white-large.svg");
+        background-image: url("../img/wavy-border-white-large.svg");
         width: 97%;
       }
     }

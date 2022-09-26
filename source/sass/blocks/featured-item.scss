@@ -14,13 +14,13 @@
       width: 100%;
       height: 18px;
 
-      background-image: url("../../img/wavy-border-grey.svg");
+      background-image: url("../img/wavy-border-grey.svg");
     }
   }
 
   @media (min-width: $desktop-width) {
     &::after {
-      background-image: url("../../img/wavy-border-grey-large.svg");
+      background-image: url("../img/wavy-border-grey-large.svg");
       height: 23px;
       bottom: -93px;
       left: 50px;

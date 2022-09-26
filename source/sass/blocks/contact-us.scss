@@ -11,7 +11,7 @@
       width: 47px;
       height: 81px;
 
-      background-image: url("../../img/flag-image.svg");
+      background-image: url("../img/flag-image.svg");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -114,14 +114,14 @@
 
   margin-bottom: 45px;
 
-  background-image: url("../../img/map-background-mobile.png");
+  background-image: url("../img/map-background-mobile.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 59px;
-    background-image: url("../../img/map-background-tablet.png");
+    background-image: url("../img/map-background-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
@@ -132,7 +132,7 @@
     top: -80px;
     right: -582px;
 
-    background-image: url("../../img/map-background-desktop.png");
+    background-image: url("../img/map-background-desktop.png");
   }
 }
 
