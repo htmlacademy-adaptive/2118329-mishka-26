@@ -61,7 +61,7 @@
     width: 32px;
     height: 22px;
 
-    background-image: url("../../img/video-icon.svg");
+    background-image: url("../img/video-icon.svg");
     background-position: center;
     background-repeat: no-repeat;
 
@@ -96,7 +96,7 @@
 
     width: 100px;
     height: 76px;
-    background-image: url("../../img/video-controls-play.svg");
+    background-image: url("../img/video-controls-play.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -132,33 +132,33 @@
 }
 
 .catalog-production__video {
-  background-image: url("../../img/video-cover-mobile.jpg");
+  background-image: url("../img/video-cover-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/video-cover-mobile@2x.jpg");
+    background-image: url("../img/video-cover-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     width: 668px;
     height: 455px;
 
-    background-image: url("../../img/video-cover-tablet.jpg");
+    background-image: url("../img/video-cover-tablet.jpg");
     background-size: 668px 455px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/video-cover-tablet@2x.jpg");
+      background-image: url("../img/video-cover-tablet@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 683px;
-    background-image: url("../../img/video-cover-desktop.jpg");
+    background-image: url("../img/video-cover-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/video-cover-desktop@2x.jpg");
+      background-image: url("../img/video-cover-desktop@2x.jpg");
     }
   }
 }

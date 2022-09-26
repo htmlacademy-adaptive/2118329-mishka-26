@@ -1,4 +1,4 @@
-.modal-container {
+.modal__container {
   top: 0;
   left: 0;
   z-index: 1;
@@ -9,7 +9,7 @@
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.modal-container__content {
+.modal__content {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -29,11 +29,11 @@
   }
 }
 
-.modal-open {
+.modal__container--open {
   display: block;
   position: fixed;
 }
 
-.modal-closed {
+.modal__container--closed {
   display: none;
 }

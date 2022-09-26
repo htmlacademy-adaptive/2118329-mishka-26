@@ -99,7 +99,7 @@ const copyFonts = (done) => {
 
 //Scripts
 
-export const minimizeScripts = (done) => {
+const minimizeScripts = (done) => {
   gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'))
@@ -157,7 +157,7 @@ export default gulp.series(
   copy,
   copyFonts,
   minimizeScripts,
-  copyImages,
+  images,
   gulp.parallel(
     createWebP,
     sprite,
